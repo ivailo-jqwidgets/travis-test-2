@@ -1,13 +1,5 @@
-var describe,
-    example,
-    it,
-    expect;
-
-describe('sumAndDif', function () {
-    'use strict';
-    var result = example(1, 3);
-
-    it('Should Sum', function () {
-        expect(result.sum).toBe(4);
-    });
+describe("A suite", function() {
+  it("contains spec with an expectation", function() {
+    expect(true).toBe(false);
+  });
 });
