@@ -1,0 +1,32 @@
+{
+  "name": "webcharts-jqx-projectplan",
+  "version": "0.0.3",
+  "description": "Documents describing the project plan and process for JQX and WebCharts. Using Github to explore and refine the process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start test/resources/karma.conf.js --single-run",
+    "style-check": "node_modules/jscs/bin/jscs -R *.js --config=.jscsrc",
+    "lint": "jslint **/*.js",
+    "lint-style": "node_modules/jscs/bin/jscs **/*.js --config=.jscsrc && jslint -R *.js",
+    "minify": "node source/build/mk-temp-dir.js && node_modules/uglify-js2/bin/uglifyjs2 source/*js -o min/example.min.js  --source-map min/example.min.js.map  --source-map-root  http://example.com/src -p 5 -c -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prestwick/webcharts-jqx-projectplan.git"
+  },
+  "author": "Mark Black",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prestwick/webcharts-jqx-projectplan/issues"
+  },
+  "homepage": "https://github.com/prestwick/webcharts-jqx-projectplan#readme",
+  "devDependencies": {
+    "jasmine-core": "2.4.1",
+    "jscs": "3.0.4",
+    "jslint": "0.10.1",
+    "karma": "0.13.22",
+    "karma-firefox-launcher": "1.0.0",
+    "karma-jasmine": "1.0.2",
+    "uglify-js2": "2.1.11"
+  }
+}
